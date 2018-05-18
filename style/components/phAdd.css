@@ -1,0 +1,68 @@
+.phAdd{
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+	
+	align-items:center;
+	justify-content: center;
+	padding:40px 0;
+}
+	.phAdd__phonesWraper{
+		padding:5px;
+	}
+		.phAdd__phones{
+			position:relative;
+			height:408.59px;
+			width:310px;
+		}
+			.phAdd__phoneLeft{
+				width:200px;
+				position:absolute;
+				z-index:19;
+			}
+				.phAdd__phoneLeft img{
+					width:100%;
+					
+
+
+				}
+			.phAdd__phoneRight{
+				width:150px;
+				position:absolute;
+				top:70px;
+				left:160px;
+
+			}
+				.phAdd__phoneRight img{
+					width:100%;
+
+
+				}
+	.phAdd__aboutWraper{
+		padding:50px;
+	}
+		.phAdd__about{
+			width:500px;
+		}
+			.phAdd__title{
+				color:#3f4244;
+				font-size:35px;
+				margin-bottom:45px;
+			}
+			.phAdd__text{
+				color:#929ba0;
+				font-size:14px;
+				line-height:1.2;
+				margin-bottom:45px;
+			}
+			.phAdd__btn{
+				width:150px;
+				margin:0 auto;
+			}
+@media screen and (max-width: 767px) {
+	.phAdd__about{
+		width:90%;
+	}
+	.
+
+}

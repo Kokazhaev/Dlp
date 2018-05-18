@@ -1,0 +1,84 @@
+.browserAdd{
+	width:100%;
+	background:linear-gradient(to bottom,#ff6c54,#ff3558);
+	background-color: #fff;
+	
+	position: relative;
+	height:582.78px;
+	overflow: hidden;
+}
+	.browserAdd__about{
+		display:block;
+		margin:0 auto;
+		width:40%;
+		padding:80px 0 130px;
+		color:white;
+	}
+		.browserAdd__title{
+			font-size:30px;
+			text-align:center;
+			font-weight:400;
+			margin-bottom:33px;
+		} 
+		.browserAdd__text{
+			text-align:center;
+			line-height:1.2;
+		}
+
+	.browserAdd__screen-left{ 
+		width:400px;
+		position:absolute;
+		top:65%;
+		left:20%;
+		z-index:17;
+	}
+		.browserAdd__top-panel{
+			height:46.14px;
+		}
+		.browserAdd__screen-left img{ 
+			width:100%;
+		}
+	.browserAdd__screen-center{
+		width:400px;
+		position:absolute;
+		top:311px;
+		right:calc(50% - 200px);
+		z-index:18;
+	}
+		.browserAdd__screen-center img{
+			width:100%;
+		}
+	.browserAdd__screen-right{
+		width:400px;
+		position:absolute;
+		top:65%;
+		right:20%;
+		z-index:17;
+	}
+		.browserAdd__screen-right img{
+			width:100%;
+		}
+@media screen and (max-width:510px){
+	.browserAdd__screen-left{
+		width:250px;
+		left:4%;
+		top:60%;
+	}
+	.browserAdd__screen-center{
+		width:250px;
+		right:calc(50% - 125px);
+		top:55%;
+	}
+	.browserAdd__screen-right{
+		width:250px;
+		right:4%;
+		top:60%;
+	}
+	.browserAdd__top-panel{
+		height:28.84px;
+	}
+	.browserAdd__about{
+		width:90%;
+		padding:80px 0;
+	}
+}

@@ -1,0 +1,50 @@
+.design{
+	width:100% ;
+	background-color: #53e6ca;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: center;
+	align-items: center;
+	padding:50px 0;
+}
+	.design__phone{
+		position:relative;
+		width:214px;
+		
+		height:434px;
+	}
+		.design__phone img{
+		position:absolute;
+		width:100%;
+		top:70px;
+	}
+	.design__description{
+		width:50%;
+		padding:0 5%;
+	}
+		.design__title{
+			font-size:35px;
+			color:#fff;
+			margin-bottom:10px;
+		}
+		.design__phrase{
+			color:#274242;
+			font-size:15px;
+			margin-bottom:15px;
+		}
+		.design__text{
+			font-size:14px;
+			color:#fff;
+		}
+@media screen and (max-width: 449px){
+	.design__phone img{
+		top:0;
+	}
+	.design__phone{
+		margin-bottom:40px;
+
+	}
+	.design__description{
+		width:90%;
+	}
+}

@@ -1,0 +1,48 @@
+.header{
+	width:100%;
+	display:flex;
+	flex-flow: row wrap;
+	height:70px;
+	position:fixed;
+	z-index: 20;
+	background-color: white;
+	
+}
+	.header__menu{
+		width:50px;
+		display:none;
+	}
+	.header__logo{
+		width:50%;
+		display: flex;
+		
+		justify-content: center;
+		align-items: center;
+
+		
+	}
+		#header__logo{
+			width:100px;
+		}
+	.nav{
+		display:flex;
+		flex-flow: row wrap;
+		padding:20px ;
+
+	}
+@media screen and (max-width: 1023px) {
+	.nav{
+		display:none;
+	}
+	.header__logo{
+		margin-left:auto;
+	}
+	.header__menu{
+		display:block;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+
+}
+

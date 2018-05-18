@@ -1,0 +1,35 @@
+.stats{
+	width:100%;
+	background-color: #233537;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: center;
+}
+	.stats__wraper{
+		padding:40px 50px;
+	}
+		.stats__item{
+
+		}
+			.stats__img{
+				width:67px;
+				margin:0 auto 20px;
+
+			}
+			.stats__number{
+				margin-bottom:15px;
+				font-size:30px;
+				color:#fff;
+				text-align:center;
+			}
+			.stats__text{
+				font-size:14px;
+				color:#10cab7;
+				text-align:center;
+
+			}
+@media screen and (max-width: 1023px){
+	.stats{
+		padding:0 20%;
+	}
+}

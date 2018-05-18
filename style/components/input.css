@@ -1,0 +1,21 @@
+.input{
+	outline:none;
+	background-color: transparent;
+	border:none;
+	color:#fff;
+	font-size:15px;
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+}
+	.input::placeholder{
+		color:#fff;
+	}
+.input_modal{
+	color:#3f4244;
+	border:1px solid #a1a8ad;
+	border-radius:3px;
+}
+	.input_modal::placeholder{
+		color:#a1a8ad;
+}

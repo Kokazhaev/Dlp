@@ -1,0 +1,689 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>zoom</title>
+	<link rel="stylesheet" type="text/css" href="./style/all.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="modal" id="modal"> 
+
+		<div class="modal__backdrop" onclick="toggleModal('close')"></div>
+		<div class="modal__inner">
+			<div class="modal__cancel" onclick="toggleModal('close')">
+				<img src="./images/multiply.svg">
+			</div>
+			<div class="modal__input">
+				<input class='input input_modal' type="text" name="name" placeholder="Your name">
+			</div>
+			<div class="modal__input">
+				<input class='input input_modal' type="text" name="mail" placeholder="Your e-mail">
+			</div>
+			<div class="modal__input">
+				<input class='input input_modal' type="text" name="wish" placeholder="Write what you want us to know ">
+			</div>
+			<div class="modal__btn">
+					<button class="nav__link nav__link_modal">
+						<div class="nav__text">Отправить</div>
+					</button>
+			</div>
+		</div>
+	</div>
+	<div class="aside" id="aside" >
+		<div class="aside__backdrop" onclick="toggleAside('close')"></div>
+		<div class="aside__inner" id="aside__inner">
+			<div class="aside__cancel" onclick="toggleAside('close')">
+				<img src="./images/multiply.svg">
+			</div>
+			<nav class="aside__nav" >
+				<button class="nav__link nav__link_aside" onclick="scrollWindow('main'),toggleAside('close')" >
+					<div  class="nav__text_aside">
+						Home
+					</div>
+				</button>
+				<button class="nav__link nav__link_aside" onclick="scrollWindow('services'),toggleAside('close')">
+					<div class="nav__text_aside">
+						Services
+					</div>
+				</button>
+				<button class="nav__link nav__link_aside" onclick="scrollWindow('portfolio'),toggleAside('close')">
+					<div class="nav__text_aside">
+						Portfolio
+					</div>
+				</button>
+				<button class="nav__link nav__link_aside" onclick="scrollWindow('about'),toggleAside('close')">
+					<div class="nav__text_aside">
+						About
+					</div>
+				</button>
+				<button class="nav__link nav__link_aside" onclick="scrollWindow('subscribe'),toggleAside('close')">
+					<div class="nav__text_aside">
+						Contact
+					</div>
+				</button>
+			</nav>
+		</div>
+	</div>
+	<header class="header" id="header">
+		<div class="header__menu" onclick="toggleAside('show')">
+			<img src="./images/menu.svg">
+		</div>
+		<div class="header__logo">
+			<img src="./images/zoom__logo.png" id="header__logo">	
+		</div>
+		<nav class="nav">
+			<button class="nav__link" onclick="scrollWindow('main')">
+				<div  class="nav__text">Home</div>
+			</button>
+			<button class="nav__link" onclick="scrollWindow('services')">
+				<div class="nav__text">Services</div>
+			</button>
+			<button class="nav__link" onclick="scrollWindow('portfolio')">
+				<div class="nav__text">Portfolio</div>
+			</button>
+			<button class="nav__link" onclick="scrollWindow('about')">
+				<div class="nav__text">About</div>
+			</button>
+			<button class="nav__link" onclick="scrollWindow('contact')">
+				<div class="nav__text">Contact</div>
+			</button>
+		</nav>
+	</header>
+	<section class="main" id="main">
+		
+		<div class="main__title" id="main__title">
+			
+		</div>
+		<div class="main__button">
+			<button class="nav__link nav__link_linkRed" onclick="toggleModal('show')">
+				<div class="nav__text nav__text_textRed">
+					SHOW ME THEN
+				</div>
+			</button>
+		</div>	
+		
+	</section>
+	<section class="services" id="services">
+		
+		<div class="services__types">	
+			<div class="services__wraper">
+				<div class="services__type">
+					<div class="services__image">
+						<img src="./images/bulb.png">
+					</div>
+					<div class="services__name">
+						web design
+					</div>
+					<div class="services__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+			<div class="services__wraper">
+				<div class="services__type">
+					<div class="services__image">
+						<img src="./images/pen.png">
+					</div>
+					<div class="services__name">
+						graphic design
+					</div>
+					<div class="services__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+			<div class="services__wraper">
+				<div class="services__type">
+					<div class="services__image">
+						<img src="./images/settings.png">
+					</div>
+					<div class="services__name">
+						programming
+					</div>
+					<div class="services__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+			<div class="services__wraper">
+				<div class="services__type">
+					<div class="services__image">
+						<img src="./images/camera.png">
+					</div>
+					<div class="services__name">
+						photography
+					</div>
+					<div class="services__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="services__button">
+			<button class="nav__link nav__link_linkRed" onclick="toggleModal('show')">
+				<div class="nav__text_textRed">
+					NEED SERVICE?
+				</div>
+			</button>
+		</div>		
+	</section>
+	<section class="browserAdd" id="browserAdd">
+		<div class="browserAdd__about">
+			<div class="browserAdd__title">
+				The Design That Likes To Say Yes.
+			</div>
+			<div class="browserAdd__text">
+				Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+				ustolion mplectitur, hinc utal.
+			</div>
+		</div>	
+		
+		<div class="browserAdd__screen-left">
+				<div class="browserAdd__top-panel">
+					<img src="./images/top-panel.png">
+				</div>
+				<div >
+					<img src="./images/webpage.png">
+				</div>
+		</div>
+		<div class="browserAdd__screen-center">
+			<div class="browserAdd__top-panel">
+					<img src="./images/top-panel.png">
+				</div>
+				<div>
+					<img src="./images/webpage.png">
+				</div>
+		</div>
+		<div class="browserAdd__screen-right">
+			<div class="browserAdd__top-panel">
+					<img src="./images/top-panel.png">
+				</div>
+				<div>
+					<img src="./images/webpage.png">
+				</div>
+		</div>	
+	</section>
+	<section class="phAdd" id="phAdd">
+		<div class="phAdd__phonesWraper">
+			<div class="phAdd__phones">
+				<div class="phAdd__phoneLeft">
+					<img src="./images/LEFT-PHONE.png">
+				</div>
+				<div class="phAdd__phoneRight">
+					<img src="./images/RIGHT-PHONE.png">
+				</div>
+			</div>
+		</div>
+		<div class="phAdd__aboutWraper">
+			<div class="phAdd__about">
+				<div class="phAdd__title">
+					Fully Responsive
+				</div>
+				<div class="phAdd__text">
+					Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna timeam appareat, movet timeam maiorum an ius.
+					Sea libris dictas lucilius et. Ne cibo urbanitas pri, qui ad populo accusamus. Quod congue ea ius, nisl aperiri sit ut.
+				</div>
+				<div class="phAdd__btn">
+					<button class="nav__link nav__link_linkRed" onclick="toggleModal('show')">
+						<div class="nav__text nav__text_textRed">
+							ORDER ME ONE
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="portfolio">
+		<div class="portfolio__about">
+			<div class="portfolio__title">
+				The Design That Likes To Say Yes.
+			</div>
+			<div class="portfolio__text">
+				Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+				ustolion mplectitur, hinc utal.
+			</div>
+		</div>
+		<nav class="portfolio__nav">
+			<div class="portfolio__link">
+				ALL
+			</div>
+			<div class="portfolio__link">
+				WEB
+			</div>
+			<div class="portfolio__link">
+				PHOTOGRAPHY
+			</div>
+			<div class="portfolio__link">
+				GRAPHIC DESIGN
+			</div>
+		</nav>
+		<div class="portfolio__examples">
+			<div class="portfolio__wraper">
+				<div class="portfolio__example">
+					<div class="portfolio__img">
+						
+					</div>
+					<div class="portfolio__heading">
+						WEB DESIGN
+					</div> 
+					<div class="portfolio__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__wraper">
+				<div class="portfolio__example">
+					<div class="portfolio__img">
+						
+					</div>
+					<div class="portfolio__heading">
+						WEB DESIGN
+					</div> 
+					<div class="portfolio__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__wraper">
+				<div class="portfolio__example">
+					<div class="portfolio__img">
+						
+					</div>
+					<div class="portfolio__heading">
+						WEB DESIGN
+					</div> 
+					<div class="portfolio__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__wraper">
+				<div class="portfolio__example">
+					<div class="portfolio__img">
+						
+					</div>
+					<div class="portfolio__heading">
+						WEB DESIGN
+					</div> 
+					<div class="portfolio__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__wraper">
+				<div class="portfolio__example">
+					<div class="portfolio__img">
+						
+					</div>
+					<div class="portfolio__heading">
+						WEB DESIGN
+					</div> 
+					<div class="portfolio__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__wraper">
+				<div class="portfolio__example">
+					<div class="portfolio__img">
+						
+					</div>
+					<div class="portfolio__heading">
+						WEB DESIGN
+					</div> 
+					<div class="portfolio__description">
+						Eum cu tantas legere complectitur.Tantas legere complectitur, hinc utamur ea eam 
+						ustolion mplectitur, hinc utal.
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+		<div class="portfolio__arrow"> 
+			<img src="./images/Arrow-Down.png">
+		</div>
+	</section>
+	<section class="stats" id="stats">
+		<div class="stats__wraper">
+			<div class="stats__item">
+				<div class="stats__img">
+					<img src="./images/case.png">
+				</div>
+				<div class="stats__number">
+					2093
+				</div>
+				<div class="stats__text">
+					Completed Projects
+				</div>
+			</div>	
+		</div>
+		<div class="stats__wraper">
+			<div class="stats__item">
+				<div class="stats__img">
+					<img src="./images/mouse.png">
+				</div>
+				<div class="stats__number">
+					9 134 835
+				</div>
+				<div class="stats__text">
+					Click Pressed
+				</div>
+			</div>	
+		</div>
+		<div class="stats__wraper">
+			<div class="stats__item">
+				<div class="stats__img">
+					<img src="./images/mail.png">
+				</div>
+				<div class="stats__number">
+					7143
+				</div>
+				<div class="stats__text">
+					Mails Sent & Received
+				</div>
+			</div>	
+		</div>
+		<div class="stats__wraper">
+			<div class="stats__item">
+				<div class="stats__img">
+					<img src="./images/typing.png">
+				</div>
+				<div class="stats__number">
+					427
+				</div>
+				<div class="stats__text">
+					Jokes Told
+				</div>
+			</div>	
+		</div>
+	</section>
+	<section class="team" id="team">
+		<div class="team__about">
+			<div class="team__title">
+				Behold the Power of Team
+			</div>
+			<div class="team__text">
+				Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum dolor sit amet, volumus temporibus definitionem id ius, vel ut magna timeam appareat, movet timeam maiorum an ius.
+			</div>
+		</div>
+		<div class="team__members">
+			<div class="team__wraper">
+				<div class="team__member">
+					<div class="team__img"></div>
+					<div class="team__name">
+						John Doe
+					</div>
+					<div class="team__job">
+						Graphic Designer
+					</div>
+					<div class="team__description">
+						Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum 
+					</div>
+				</div>
+			</div>
+			<div class="team__wraper">
+				<div class="team__member">
+					<div class="team__img"></div>
+					<div class="team__name">
+						John Doe
+					</div>
+					<div class="team__job">
+						Graphic Designer
+					</div>
+					<div class="team__description">
+						Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum 
+					</div>
+				</div>
+			</div>
+			<div class="team__wraper">
+				<div class="team__member">
+					<div class="team__img"></div>
+					<div class="team__name">
+						John Doe
+					</div>
+					<div class="team__job">
+						Graphic Designer
+					</div>
+					<div class="team__description">
+						Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum 
+					</div>
+				</div>
+			</div>
+			<div class="team__wraper">
+				<div class="team__member">
+					<div class="team__img"></div>
+					<div class="team__name">
+						John Doe
+					</div>
+					<div class="team__job">
+						Graphic Designer
+					</div>
+					<div class="team__description">
+						Eum cu tantas legere complectitur, hinc utamur ea eam. Lorem ipsum 
+					</div>
+				</div>
+			</div>
+
+			
+		</div>	
+	</section>
+	<section class="words" id="words">
+		<div class="words__slider" id="words__slider">
+			<div class="words__slide words__slide_left">
+				<div class="words__inner">
+					<div class="words__topImg">
+						<img src="./images/icon.png">
+					</div>
+					<div class="words__citation">
+						<div class="words__phrase">
+							We realize and actualize your vision
+						</div>
+						<div class="words__name">
+							John Doe CEO
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="words__slide words__slide_center">
+				<div class="words__inner">
+					<div class="words__topImg">
+						<img src="./images/icon.png">
+					</div>
+					<div class="words__citation">
+						<div class="words__phrase">
+							We realize and actualize your vision
+						</div>
+						<div class="words__name">
+							John Doe CEO
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="words__slide words__slide_right">
+				<div class="words__inner">
+					<div class="words__topImg">
+						<img src="./images/icon.png">
+					</div>
+					<div class="words__citation">
+						<div class="words__phrase">
+							We realize and actualize your vision
+						</div>
+						<div class="words__name">
+							John Doe CEO
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+
+		</div>
+		<div class="words__left" onclick="slide('left')">
+			<img src="./images/Left.png">
+		</div>
+		<div class="words__right" onclick="slide('right')">
+			<img src="./images/Right.png">
+		</div>
+	</section>
+	<section class="newsletter" id="newsletter">
+		<div class="newsletter__text">Want to hear more story? Subscribe to our newsletter </div>
+		<div class="newsletter__wraper">
+			<div class="newsletter__button">
+				<button class="newsletter__btn">
+					Subscribe! 
+				</button>
+			</div>
+		</div>
+	</section> 
+	<section class="about" id="about">
+		<div class="about__wraper">
+			<div class="about__site"></div>
+		</div>
+		<div class="about__wraper">
+			<div class="about__description">
+				
+				<div class="about__title">
+					About Some Site
+				</div> 
+				
+				<div class="about__text">
+					lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+					<p>lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="design" id="design">
+		<div class="design__phone">
+			<img src="./images/LEFT-PHONE.png">
+		</div>
+		<div class="design__description">
+			<div class="design__title">
+				Modern Design
+			</div>
+			<div class="design__phrase">
+				Responsive Design
+			</div>
+			<div class="design__text">
+				lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+			</div>
+		</div>
+	</section>
+	<section class="feedback" id="feedback">
+		<div class="feedback__title">
+			What clients says
+		</div> 
+		<div class="feedback__text">
+			lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+		</div>
+		<div class="feedback__people">
+			<div class="feedback__wraper">
+				<div class="feedback__person">
+				<div class="feedback__name">
+					Anya Stoen
+				</div>
+				<div class="feedback__job">
+					Graphic Designer
+				</div>
+				<div class="feedback__comment">
+					lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+				</div>
+				</div>
+			</div>
+			<div class="feedback__wraper">
+				<div class="feedback__person">
+				<div class="feedback__name">
+					Anya Stoen
+				</div>
+				<div class="feedback__job">
+					Graphic Designer
+				</div>
+				<div class="feedback__comment">
+					lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+				</div>
+				</div>
+			</div>
+			<div class="feedback__wraper">
+				<div class="feedback__person">
+				<div class="feedback__name">
+					Anya Stoen
+				</div>
+				<div class="feedback__job">
+					Graphic Designer
+				</div>
+				<div class="feedback__comment">
+					lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+				</div>
+				</div>
+			</div>
+
+		</div>
+		
+	</section>
+	<section class="contact" id="contact">
+		<div class="contact__title">Contact Us</div>
+		<div class="contact__text">
+			lso the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+
+		</div>
+		<div class="contact__form">
+			
+			<div class="contact__wraper">
+				<div class="contact__inputName ">
+					<input class="input input_name" type="text" name="name" placeholder="Your name here">
+				</div>
+			</div>
+			<div class="contact__wraper">
+				<div class="contact__inputMail">
+					<input class="input input_mail" type="text" name="mail" placeholder="Your mail here">
+				</div>
+			</div>
+			
+			<div class="contact__inputMessage">
+				<input class="input input_message" type="text" name="message" placeholder="Your message here">
+			</div>
+			<div class="contact__button">
+				<button class="newsletter__btn">Send Message</button>
+			</div>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="contacts__information">
+			<div class="contacts__text">
+				Awesome adress 432
+			</div>
+			<div class="contacts__text">
+				ourmailer@mail.ru
+			</div>
+			<div class="contacts__text">
+				88005553555
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="footer__text">
+			©2018 - <span>Zoom</span> All Rights Reserved
+		</div>
+	</footer>
+<script type="text/javascript" src="./js/aside.js"></script>
+<script type="text/javascript" src="./js/modal.js"></script>
+<script type="text/javascript" src="./js/scroll.js"></script>
+<script type="text/javascript" src="./js/slider.js"></script>
+<script type="text/javascript" src="./js/dynamicText.js"></script>
+</body>
+</html>

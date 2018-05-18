@@ -1,0 +1,71 @@
+.nav__link{
+	
+	text-transform: uppercase;
+	color:#3f4244;
+	transition:0.3s;
+	background-color: none;
+	border:none;
+	border-radius: 6px;
+	outline:none;
+	margin:0 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.nav__link:hover{
+	background:linear-gradient(to bottom,#6cfec6,#43d6cd);
+	border-radius: 6px;
+	transition: 0.3s;
+	color:#fff;
+}
+	.nav__text{
+		
+		font-size:13px;
+	}
+.nav__link_linkRed{
+	background:linear-gradient(to bottom,#ff6c54,#ff3558);
+	width:100%;
+	margin:30px 0px 50px;
+
+}
+.nav__link_linkRed:hover{
+	background:linear-gradient(to bottom,#e1644f,#e13251);
+	color:#3f4244;
+
+}
+		.nav__text_textRed{
+		margin:15px 0px ;
+		font-size:13px;
+	}
+.newsletter__btn{
+				background-color: #233537;
+				color:#fff;
+				width:calc(100% - 2px);
+				height:calc(100% - 2px);
+				
+				padding:10px 0;
+				outline:none;
+				border:1px solid transparent;
+
+			}
+			.newsletter__btn:hover{
+				background-color: #1d2b2d;
+				cursor:pointer;
+			}
+.aside__nav{
+	padding:80px 20px;
+}
+		.nav__link_aside{
+		margin-bottom:20px;
+		background-color: transparent;
+	}
+		.nav__text_aside{
+		font-size:25px;
+	}
+.nav__link_modal{
+	width:100%;
+	padding:10px 0;
+	font-size:20px;
+}

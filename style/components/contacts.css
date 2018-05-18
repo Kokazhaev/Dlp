@@ -1,0 +1,22 @@
+.contacts{
+	width:100%;
+	background-color: #232e3d;
+	padding:5% 15%;
+}
+	.contacts__information{
+		width:300px;
+		background-color: #53e5cb;
+		padding:30px;
+		margin-left:auto;
+	}
+		.contacts__text{
+			font-size:16px;
+			color:#fff;
+			margin-bottom:10px;
+		}
+@media screen and (max-width: 449px){
+	.contacts{
+		padding:5% 10px;
+	}
+	
+}
